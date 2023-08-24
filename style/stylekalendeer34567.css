@@ -1,0 +1,436 @@
+/* Head*/
+header{
+  position:fixed;
+  top:0;
+  left: 0;
+  right: 0; 
+  width:auto;
+  background-color: rgb(42, 174, 203);
+  margin-bottom: auto;
+  height: auto;
+  z-index: 10;
+}
+.menu li {
+  list-style: none;
+  color: white;
+}
+.menu li span:hover {
+  cursor: pointer;
+  color: wheat;
+}
+.container a{
+  color: white;
+  text-decoration: none;
+}
+.container{
+  width: auto;
+  margin: auto;
+}
+.bar{
+  width: 95%;
+  margin: auto;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.bar h1 {
+  font-size: 25px;
+  color: snow;
+  font-family: consolas;
+}
+/* html */
+html { 
+  background: url(../images/212422.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+/*Body*/
+body {
+  margin:0 ;
+  max-width: auto;
+  
+}
+/*kalender*/
+.kalender {
+  max-width: auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+ 
+  
+
+}
+.bulan {
+  text-align: center;
+  margin :auto;
+  max-width: auto;
+  font-size: 50px;
+  font-weight: bold;
+  color:rgb(206, 176, 119);
+  padding: 15px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px wheat;
+}
+
+.cal, #tabelkalender .Hari, .HariLuarBulan, .Hariheader, .Hariini, .harievent{
+  height: 70px;
+  width: 120px;
+  table-layout: fixed;
+  text-align: center;
+  color:snow;
+  font-size: 30px;
+  border-collapse: collapse;
+  border: 5px solid snow;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  /* border-radius: 25px; */
+  backdrop-filter: blur(25px);
+}
+.cal{
+  border: none;
+}
+#homee{
+  margin-top: 80px;
+  margin-bottom: 70px;
+  margin-left: 10%;
+  padding: 10px;
+}
+
+
+.Hari, .HariLuarBulan, .Hariheader,.Hariini, .harievent{
+  padding: 15px;
+}
+
+
+.Hariheader{
+  background-color: rgb(225, 175, 82);
+}
+
+.Hari, .HariLuarBulan, .harievent{
+  background-color:rgb(245, 227, 114);
+}
+.Hariini{
+  background-color: rgb(241, 216, 55);
+}
+.Hariini:hover{
+  background-color: wheat;
+  background-size:n;
+  cursor: pointer;
+}
+.Hari:hover{
+  background-color: wheat;
+  background-size:n;
+  cursor: pointer;
+}
+.harievent {
+  background: radial-gradient(white,wheat);
+  color:wheat;
+}
+.harievent:hover{
+  background: rgb(173, 140, 73);
+  cursor: pointer;
+}
+/* .levelsangatpenting{
+  color: red;
+  padding: 0px;
+}
+.levelpenting{
+  color: blue;
+  padding: 0px;
+}
+.levelbiasa{
+  color: green;
+  padding: 0px; 
+} */
+.Hari a{
+  text-decoration: none;
+}
+
+.HariLuarBulan{
+  opacity: 0.7;
+}
+
+/*haldetail*/
+.tabeldetail td, .tabeldetail{
+  width: auto;
+  height: 50px;
+  table-layout:fixed;
+  text-align: center;
+  color:snow; 
+  font-size: 30px;
+  border-collapse: collapse;
+  border: 5px  snow;
+  border-style: groove;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  background-color: rgb(225, 175, 82);
+  padding:5px 200px;
+  margin-top: 5%;
+  margin-bottom: 2.5%;
+}
+.infoo, .detail{
+  padding: 0;
+  margin: 0;
+}
+.gambar{
+  width: 50%;
+
+}
+/* footer*/
+footer{
+  clear: both;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background: rgb(42, 174, 203);
+  height: auto;
+  width:100%;
+  color: black;
+  font-weight: 200;
+}
+.footerisi{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+  text-align: center;
+}
+.footerisi h1{
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 5px;
+  text-align: left;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.socials li{
+  list-style: none;
+}
+.socials a{
+  text-decoration: none;
+  color: #160101;
+}
+.socials a i{
+  font-size: 20px;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: greenyellow;
+}
+
+.bawah{
+  background: #000;
+  width: auto;
+  padding: 10px;
+  text-align: right;
+  height: 20px;
+  align-items: center;
+}
+.bawah p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  color: wheat
+}
+.bawah span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+#footerdetail{
+  clear: both;
+  position:fixed;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background: rgb(42, 174, 203);
+  height: auto;
+  width:100%;
+  color: black;
+  font-weight: 200;
+}
+/*informasi*/
+aside.informasi{
+  
+  border: 5px solid white;
+  color: white;
+  float: right;
+  background-color: rgb(42, 174, 203);
+  padding: 30px;
+  font-size:22px;
+  position: sticky;
+  margin-left: -100%;
+  top: 70px;
+  border-radius: 20px;
+  margin-right: 15px;
+  text-align: justify;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.judul{
+  text-transform: uppercase;
+  text-align: center;
+}
+/*Form*/
+div.formbody{
+  border: 5px solid snow;
+  margin-top: 10%;
+  width: 30%;
+  position: fixed;
+  left: 35%;
+  right: 35%;
+  background-color: wheat;
+  border-radius: 25%;
+  
+}
+form{
+  font-size: 22px;
+  padding: 5% 25%;
+}
+label {
+  display: flex;
+  align-items: center;
+}
+
+label > input {
+  margin-left: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+}
+.invalid {
+  border: 1px solid red;
+}
+#merah{
+color:red;
+}
+#biru{
+  color:blue;
+}
+#hijau{
+  color:greenyellow;
+}
+a{
+  text-decoration: none;
+}
+.tombol{
+  border-radius: 100%;
+  border: 1px solid white;
+  padding: 20px;
+  background-color: lightblue;
+  cursor: pointer;
+  margin: 5% 35%;
+  border: 1px solid black;
+  text-align: center;
+}
+.tombol:hover{
+  background-color: wheat;
+  
+}
+#formlogout{
+  border: none;
+  margin:0;
+  padding: 0;
+  text-align: center;
+}
+
+.logoutbtn{
+  border: 1px solid black;
+  background-color: lightblue;
+  border-radius: 25px;
+  padding: 15px;
+  cursor: pointer;
+}
+.logoutbtn:hover{
+  background-color: wheat;
+}
+/* tabel informasi event */
+.informasievent{
+  background:rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  width: 0px;
+  max-height: 500px;
+}
+.events{
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  text-align: left;
+}
+.events .event{
+  position: relative;
+  width: 200px;
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 20px;
+  padding-left: 50px;
+  color: white;
+  cursor: pointer;
+  background:linear-gradient(90deg, rgba(0, 0, 0, 0.424),transparent);
+}
+
+/* .events .event:nth-child(even){
+  background: transparent;
+} */
+
+.events .event:hover{
+  background: linear-gradient(to left,black,black);
+}
+.btn_detail{
+  background-color: transparent;
+  border: none;
+  float: center;
+  cursor: pointer;
+}
+.event .JudulEvent{
+font-size: 26px;
+}
+.event .Waktu{
+  opacity: 0.5;
+}
+
+#levelsangatpenting:hover{
+  background: linear-gradient(to left,red,black);
+}
+#levelpenting:hover{
+  background: linear-gradient(to left,blue,black);
+}
+#levelbiasa:hover{
+  background: linear-gradient(to left,green,black);
+}
+
+.tomboldetail{
+  background: linear-gradient(to left,wheat,lightblue);
+  border-radius: 25px;
+}
+.tomboldetail:hover{
+  background: linear-gradient(to right,wheat,lightblue);
+}
+
